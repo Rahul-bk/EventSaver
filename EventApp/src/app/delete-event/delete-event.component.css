@@ -1,0 +1,9 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+#logout_button{
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+}

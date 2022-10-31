@@ -1,0 +1,106 @@
+ #main {
+    background-image: url('../../assets/joanna-kosinska-LAaSoL0LrYs-unsplash.jpg');
+    height: 100vh;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-div {
+    width: 70%;
+    height: 80vh;
+    background-color: #ffff;
+     border-radius: 7px;
+     box-shadow: 5px 13px 14px rgb(70, 60, 60);
+}
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: fit-content;
+    height: inherit;
+    position: absolute;
+    padding-top: 100px;
+    position: absolute;
+    left:20%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 7px;
+}
+.head-reg{
+    padding:30px 40px;
+}
+.inp{
+    background-color: rgba(211, 211, 211, 0.189);
+    width: 300px;
+    padding: 8px;
+
+}
+.inp input{
+    border: none;
+    outline: none;
+    background-color:rgba(211, 211, 211, 0);
+    margin-left: 5px;
+    width: 260px;
+
+}
+.inp i{
+    font-size: 18px;
+    color:gray;
+}
+.inp input::placeholder{
+    color:gray;
+}
+
+.head-reg h2{
+    color: #17a2b8;
+    font-weight: bold;
+}
+.sign-btn {
+    text-align: center;
+}
+button{
+   border-radius: 100px;
+   margin: 0px auto;
+   width: 50%;
+   height: 40px;
+   background-color: #17a2b8;
+   border: none;
+   outline: none;
+   color: #ffff;
+   font-size: 13px;
+   
+}
+.reg-side{
+    background-color: #17a2b8;
+    width: 40%;
+    height: inherit;
+    position: relative;
+    left: 30%;
+    padding-top: 150px;
+    color: #ffff;
+    font-family:sans-serif;
+}
+.reg-side h2{
+    font-weight: bold;
+}
+.side-btn{
+    border-radius: 100px;
+    margin: 0px auto;
+    width: 50%;
+    height: 40px;
+    background-color: #17a2b8;
+    border: 1px solid #fff;
+    outline: none;
+    color: #ffff;
+    font-size: 13px;
+}
+#check1{
+}
+#check1:checked form{
+    transform:translateX(200px);
+}
+
+

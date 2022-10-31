@@ -1,0 +1,70 @@
+<nav class="navbar bg-light">
+    <div class="row container-fluid">
+        <div class="col-md-6">
+            <h3>Welcome</h3>
+        </div>
+        <div class="col-md-6  text-center">
+            <a routerLink="/event" class="me-3"><strong>Home</strong></a>
+            <a routerLink="/event-delete" class="me-3"><strong>Event</strong></a>
+            <a routerLink="/trash-event" class="me-3"><strong>Delete Event</strong></a>
+            <div class="log ">
+            <button class="btn btn-outline-primary " routerLink="/" id="logout_button"><strong>Logout</strong></button>
+        </div>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo">Add Event <strong> <i class="bi bi-plus-lg"></i></strong></button>
+
+    <div class="modal fade" id="exampleModal" *ngIf="show" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Event Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup]="eventForm">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Event Name</label>
+                            <input type="text" class="form-control" id="recipient-name" formControlName="eventName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Event Date</label>
+                            <input type="date" class="form-control" id="recipient-name" formControlName="eventDate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">User Id:</label>
+                            <input type="text" class="form-control" id="recipient-name" formControlName="userId">
+                        </div>
+                        <!-- Radio -->
+                        <div>
+                            <label for="" class="me-3"><strong>Priority:</strong></label>
+                       
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" formControlName="Priority"  value="High">
+                            <label class="form-check-label" for="inlineRadio1">High</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio"   formControlName="Priority"  value="Medium">
+                            <label class="form-check-label" for="inlineRadio2">Medium</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio"   formControlName="Priority"  value="Low">
+                            <label class="form-check-label" for="inlineRadio2">Low</label>
+                          </div>
+                        </div>
+                          
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"  (click)="Event()" >Add Event</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
